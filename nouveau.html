@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Clash Royale - Guide du Débutant</title>
+    <style>
+
+      body {
+        background: linear-gradient(135deg, #1e90ff, #ff4c4c);
+        font-family: Arial, sans-serif;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav {
+        background-color: rgba(0, 0, 80, 0.8);
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+      }
+
+      nav a {
+        color: #ffff66;
+        font-weight: bold;
+        text-decoration: none;
+        transition: color 0.3s, transform 0.2s;
+      }
+
+      nav a:hover {
+        color: #ffeb3b;
+        transform: scale(1.1);
+        text-shadow: 1px 1px 2px #000;
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: rgba(0, 0, 50, 0.7);
+        border-radius: 15px;
+        box-shadow: 0 12px 20px rgba(0,0,0,0.6);
+      }
+
+      h1, h2, h3 {
+        text-align: center;
+        text-shadow: 2px 2px 5px #000;
+      }
+
+      h1:hover {
+        color: #ffcc00;
+        transition: color 0.4s;
+      }
+
+      p {
+        line-height: 1.6;
+        text-shadow: 1px 1px 2px #000;
+        max-width: 800px;
+        margin: 10px auto;
+      }
+
+      .cartes, .deck {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 20px;
+      }
+
+      .cartes img, .deck img {
+        width: 120px;
+        border-radius: 10px;
+        box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+
+      .cartes img:hover, .deck img:hover {
+        transform: scale(1.1);
+        box-shadow: 0 8px 18px rgba(0,0,0,0.7);
+      }
+
+      note[type="info"] {
+        display: block;
+        padding: 12px;
+        margin: 15px auto;
+        border-radius: 8px;
+        border-left: 5px solid #ffcc00;
+        background: #ffe0e0;
+        color: #000;
+        max-width: 800px;
+        font-weight: bold;
+        text-shadow: none;
+      }
+
+      video {
+        display: block;
+        margin: 20px auto;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.6);
+      }
+
+      .tips {
+        margin-top: 30px;
+        text-align: center;
+      }
+
+      .tips button {
+        background-color: #010100;
+        color: #000;
+        border: none;
+        padding: 10px 20px;
+        font-weight: bold;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.2s;
+      }
+
+      .tips button:hover {
+        background-color: #ffaa00;
+        transform: scale(1.05);
+      }
+
+      footer {
+        text-align: center;
+        margin: 20px 0;
+        font-weight: bold;
+        text-shadow: 1px 1px 2px #000;
+        font-size: 1.1em;
+      }
+
+      a {
+        color: #ffff66;
+        text-decoration: underline;
+        font-weight: bold;
+      }
+
+      a:hover {
+        color: #3b58ff;
+        text-shadow: 1px 1px 2px #000;
+      }
+
+      .pics-clash-royal img {
+        max-width: 300px ;
+        border-radius: 12px ;
+        box-shadow: 0 0 15px;
+      }
+
+      .pics.clash img {
+        display:block;
+        max-width:100%;
+        transition: opacity 300ms ease;
+        opacity: 0.5;
+      }
+      .pics.clash img:hover {
+        opacity: 1;
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+    <nav>
+      <a href="#">Accueil</a>
+      <a href="#cartes">Cartes</a>
+      <a href="#deck">Mon Deck</a>
+      <a href="#video">Vidéo</a>
+    </nav>
+
+    <div class="container">
+
+      <h1>Clash Royale - Guide du Débutant</h1>
+      
+      <h2>Comprendre les bases du jeu</h2>
+
+      <note type="info">
+        <strong>Astuce :</strong> Garde toujours un peu d’élixir pour défendre après une attaque.
+      </note>
+
+      <p>
+        <strong>Clash Royale</strong> est un jeu de stratégie en temps réel où tu affrontes d’autres joueurs 
+        dans des arènes. Le but est de détruire les tours ennemies tout en défendant les tiennes.
+      </p>
+
+      <p>
+        Pour gagner, il faut <em>gérer ton élixir</em>, <u>placer tes cartes au bon moment</u> 
+        et <b>anticiper les actions de ton adversaire</b>.
+      </p>
+
+      <h3>Liens utiles</h3>
+
+      <p>
+        <a href="https://clashroyale.com/" title="Site officiel de Clash Royale" target="_blank">
+          Visite le site officiel
+        </a>
+        <br>
+        <a href="file:///home/chronos/u-a452aada02aaa0f0241d0e6bef9993cc4e1f62e4/MyFiles/Downloads/clashroyal.html" target="_blank" title="Voir la suite du guide">
+          L'histoire de Clash Royale
+        </a>
+      </p>
+
+      <h3 id="cartes">Cartes populaires</h3>
+
+      <div class="cartes">
+        <img src="data:image/jpeg;base64,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" alt="Géant" title="Le Géant : tank puissant">
+        <img src="https://static.wikia.nocookie.net/clashroyale/images/0/0b/MegaKnightCard.png" alt="Méga Chevalier" title="Méga Chevalier : saute sur les ennemis">
+        <img src="https://static.wikia.nocookie.net/clashroyale/images/4/49/WizardCard.png" alt="Sorcier" title="Sorcier : dégâts de zone puissants">
+        <img src="https://static.wikia.nocookie.net/clashroyale/images/7/7b/MiniPEKKACard.png" alt="Mini P.E.K.K.A" title="Mini P.E.K.K.A : coup ultra puissant">
+      </div>
+
+      <h3 id="video">Vidéo de présentation</h3>
+      
+      <video id="videoClash" width="560" height="315" autoplay loop muted controls>
+        <source src="pub Supercell Clash Royale 2016 [HQ].mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la vidéo HTML5.
+      </video>
+
+      
+      <footer>
+        <p>Créé par un fan de Clash Royale 💥</p>
+      </footer>
+
+    </div>
+
+    <h3 id="deck">Mon deck favori</h3>
+
+    <div class="deck">
+      <img src="https://cdn.royaleapi.com/static/img/cards/witch-ev1.png" alt="Sorcière évo"  title="Sorcière évo" >
+      <img src="https://cdn.royaleapi.com/static/img/cards/mega-knight-ev1.png" alt="Méga Chevalier évo" title="Méga Chevalier évo">
+      <img src="https://static.wikia.nocookie.net/clashroyale/images/3/30/HogRiderCard.png" alt="Chevaucheur de cochon" title="Chevaucheur de cochon">
+      <img src="https://static.wikia.nocookie.net/clashroyale/images/e/ee/GoblinBarrelCard.png" alt="Fût à gobelin" title="fût de gobelin">
+      <img src="https://static.wikia.nocookie.net/clashroyale/images/2/22/BatsCard.png" alt="Chauve-souris" title="Chauve souris">
+      <img src="https://cdn.royaleapi.com/static/img/cards/cannon-ev1.png" alt="Canon évolution" title="Canon évo">
+      <img src="https://static.wikia.nocookie.net/clashroyale/images/6/6e/ArrowsCard.png" alt="Flèches" title="Flèche">
+      <img src="https://static.wikia.nocookie.net/clashroyale/images/f/f4/FireballCard.png" alt="Boule de feu"  title="Boule de feu">
+    </div>
+
+    <h3 id="deck">photo de l'appli Clash royal</h3>
+
+    <div class="pics-clash-royal">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYQvA-BusDIv7xoyNxJh63HCclFfh-fTWFyA&s" alt="nom clash royal" title="CLASH ROYAL:meilleur jeux mobile">
+      <div class="pics clash">
+        <img src="..." alt="CLASH ROYAL:MEILLEUR JEUX MOBILE " title="CLASH ROYAL: meilleur jeux mobile">
+      </div>
+    </div>
+
+  </body>
+
+  <script>
+
+    const video = document.getElementById('videoClash');
+    video.addEventListener('ended', () => {
+      video.currentTime = 0;
+      video.play();
+    });
+    setInterval(() => { if(video.paused) video.play(); }, 10000);
+
+    class Note extends HTMLElement {
+      connectedCallback() {
+        this.style.display = "block";
+        this.style.padding = "12px";
+        this.style.margin = "15px auto";
+        this.style.borderRadius = "8px";
+        this.style.borderLeft = "5px solid #ffcc00";
+        this.style.background = "#ffe0e0";
+        this.style.color = "#000";
+        this.style.maxWidth = "800px";
+        this.style.fontWeight = "bold";
+      }
+    }
+    customElements.define('note', Note);
+
+    function afficherAstuce() {
+      const zone = document.getElementById('astuceZone');
+      const random = astuces[Math.floor(Math.random() * astuces.length)];
+      zone.textContent = random;
+    }
+
+  </script>
+</html>

@@ -157,6 +157,130 @@
         opacity: 1;
       }
 
+      @media (max-width: 1080px) {
+        .container {
+          max-width: 90%;
+          padding: 15px;
+        }
+        nav {
+          gap: 20px;
+        }
+        .cartes img, .deck img {
+          width: 110px;
+        }
+        video {
+          width: 90%;
+        }
+      }
+
+      @media (max-width: 720px) {
+        nav {
+          flex-wrap: wrap;
+          gap: 15px;
+          padding: 8px 0;
+        }
+        nav a {
+          font-size: 0.95em;
+        }
+        h1 {
+          font-size: 1.8em;
+        }
+        h2, h3 {
+          font-size: 1.3em;
+        }
+        .cartes img, .deck img {
+          width: 100px;
+        }
+        .pics-clash-royal img {
+          max-width: 250px;
+        }
+      }
+
+      @media (max-width: 600px) {
+        body {
+          font-size: 0.95em;
+        }
+        nav {
+          flex-direction: column;
+          align-items: center;
+        }
+        nav a {
+          display: block;
+          padding: 5px 0;
+        }
+        .cartes, .deck {
+          gap: 10px;
+        }
+        .cartes img, .deck img {
+          width: 90px;
+        }
+        video {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      @media (max-width: 500px) {
+        .container {
+          padding: 10px;
+        }
+        h1 {
+          font-size: 1.6em;
+        }
+        h2, h3 {
+          font-size: 1.2em;
+        }
+        p {
+          padding: 0 10px;
+        }
+        .cartes img, .deck img {
+          width: 80px;
+        }
+        footer {
+          font-size: 1em;
+        }
+      }
+
+      @media (max-width: 400px) {
+        h1 {
+          font-size: 1.4em;
+        }
+        nav {
+          gap: 10px;
+        }
+        nav a {
+          font-size: 0.9em;
+        }
+        .cartes img, .deck img {
+          width: 70px;
+        }
+        .pics-clash-royal img {
+          max-width: 200px;
+        }
+        note[type="info"] {
+          font-size: 0.9em;
+          padding: 10px;
+        }
+      }
+
+      @media (max-width: 300px) {
+        h1 {
+          font-size: 1.2em;
+        }
+        nav {
+          flex-direction: column;
+        }
+        .cartes img, .deck img {
+          width: 60px;
+        }
+        p {
+          font-size: 0.9em;
+        }
+        footer {
+          font-size: 0.9em;
+        }
+      }
+
     </style>
   </head>
 
@@ -213,7 +337,7 @@
       <h3 id="video">Vidéo de présentation</h3>
       
       <video id="videoClash" width="560" height="315" autoplay loop muted controls>
-        <source src="pub Supercell Clash Royale 2016 [HQ].mp4" type="video/mp4">
+        <source src="pub.mp4" type="video/mp4">
         Votre navigateur ne supporte pas la vidéo HTML5.
       </video>
 
